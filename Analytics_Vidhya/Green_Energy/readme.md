@@ -16,7 +16,7 @@ future use.
 
 
 2. Which Data-preprocessing / Feature Engineering ideas really worked? How did you discover them?
-3. 
+
 ML Approach:
 In ML approach, I initially converted the datetime column from ‘object’ datatype to ‘datetime’
 datatype. Then I generated feature columns namely ‘year’,’month’,’day’, and ‘hour’ from the new
@@ -35,6 +35,7 @@ energy data with higher scores was used to create later future covariates
 
 
 3. What does your final model look like? How did you reach it?
+
 The final model is an LSTM model incorporated with 1 LSTM layer with 2% dropout, 4 attention
 heads, Quantile Regression, input chunk length of 48 months and forecast horizon of 24 months
 trained for a total of 20 epochs resulting in a MAPE of ~25% and RMSE of ~15%. Note that this is
